@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="lab2.css">
+    <title>Home web page - Vietfood Company - Lunch</title>
+</head>
+<body>
+    <header>
+        <h1 >Viet Food</h1>
+        <nav class="nav1">
+            <a href="lab1.html">О нас</a>
+            <a href="#lunch" id="main-page">Собрать ланч</a>
+            <a href="#oder">Заказы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <section class="soup-food">
+            <h2 class="kind-food">Выберите суп</h2>
+            <div class="block-food">
+                <!-- <div class="food">
+                    <div class="photo"><img src="soup1.jpg" alt="Pho" class="photo-food"></div>
+                    <p class="price">450₽</p>
+                    <p class="name-food">Фо Бо</p>
+                    <p class="weight-volume">600г</p>
+                    <div class="button">
+                        <input type="submit" value="Добавить">
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="photo"><img src="soup2.jpg" alt="Tom ym" class="photo-food"></div>
+                    <p class="price">480₽</p>
+                    <p class="name-food">Том Ям</p>
+                    <p class="weight-volume">650г</p>
+                    <div class="button">
+                        <input type="submit" value="Добавить">
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="photo"><img src="soup3.jpg" alt="crab soup" class="photo-food"></div>
+                    <p class="price">430₽</p>
+                    <p class="name-food">Крабовый Суп</p>
+                    <p class="weight-volume">500г</p>
+                    <div class="button">
+                        <input type="submit" value="Добавить">
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        
+        <section class="main-food">
+            <h2 class="kind-food">Выберите основное блюдо</h2>
+            <div class="block-food">
+                <!-- <div class="food">
+                    <div class="photo"><img src="mainfood1.jpg" alt="fried rice" class="photo-food"></div>
+                    <p class="price">550₽</p>
+                    <p class="name-food">Жареный Рис С  Морепродуктами</p>
+                    <p class="weight-volume">700г</p>
+                    <div class="button">
+                        <input type="submit" value="Добавить">
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="photo"><img src="mainfood2.jpg" alt="fried noodles" class="photo-food"></div>
+                    <p class="price">520₽</p>
+                    <p class="name-food">Жареная Лапша С Говядиной</p>
+                    <p class="weight-volume">700г</p>
+                    <div class="button">
+                        <input type="submit" value="Добавить">
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="photo"><img src="mainfood3.jpg" alt="sweet and sour chicken rice" class="photo-food"></div>
+                    <p class="price">600₽</p>
+                    <p class="name-food">Кисло-Сладкий Куриный С Рис</p>
+                    <p class="weight-volume">700г</p>
+                    <div class="button">
+                        <input type="submit" value="Добавить">
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="drink">
+            <h2 class="kind-food">Выберите суп</h2>
+            <div class="block-food">
+                <!-- <div class="food">
+                    <div class="photo"><img src="drink1.jpg" alt="drink1" class="photo-food"></div>
+                    <p class="price">400₽</p>
+                    <p class="name-food">Авокадо Шейк</p>
+                    <p class="weight-volume">500 мл</p>
+                    <div class="button">
+                        <input type="submit" value="Добавить">
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="photo"><img src="drink2.jpg" alt="drink2" class="photo-food"></div>
+                    <p class="price">400₽</p>
+                    <p class="name-food">Манго Шейк</p>
+                    <p class="weight-volume">500 мл</p>
+                    <div class="button">
+                        <input type="submit" value="Добавить">
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="photo"><img src="drink3.jpg" alt="drink3" class="photo-food"></div>
+                    <p class="price">400₽</p>
+                    <p class="name-food">Драконий Фрукт Шейк</p>
+                    <p class="weight-volume">500 мл</p>
+                    <div class="button">
+                        <input type="submit" value="Добавить">
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="main-order">
+            <h2 class="place-order">Сделать заказ</h2>
+                <form action="https://httpbin.org/post" method="post" class="form-order">
+                <div class="customer-order">
+                    <p>Ваш заказ</p>
+                    <!-- <div class="choose-food">
+                        <label for="soup">Суп:</label> <br>
+                        <select id="soup" name="soup" required>
+                            <option value="">--Выберите суп--</option>
+                            <option value="Pho-Bo">Фо Бо</option>
+                            <option value="Tom-Ym">Том Ям</option>
+                            <option value="Crab-Soup">Крабовый Суп</option>
+                        </select>
+                    </div>
+                    <div class="choose-food">
+                        <label for="main-food">Главное блюдо:</label> <br>
+                        <select id="main-food" name="main-food" required>
+                            <option value="">--Выберите главное блюдо--</option>
+                            <option value="Fried-Rice">Жаренный Рис С Морепродуктами</option>
+                            <option value="Fried-Noodles">Жаренная Лаша С Говядиной</option>
+                            <option value="Sweet and Sour Chicken">Кисло-Сладкий Куриный С Рис</option>
+                        </select>
+                    </div>
+                    <div class="choose-food">
+                        <label for="drink">Суп:</label> <br>
+                        <select id="drink" name="drink" required>
+                            <option value="">--Выберите суп--</option>
+                            <option value="Avocado">Авокадо Шейк</option>
+                            <option value="Mango">Манго Шейк</option>
+                            <option value="Dragon Fruit">Драконий Фрукт Шейк</option>
+                        </select>
+                    </div> -->
+
+                    <div class="order-section" id="order-section" >Ничего не выбрано</div>
+                    <div class="table-choose" id="table-choose" style="display: none;">
+                    <div class="choose-food">
+                        <label for="soup">Суп:</label>
+                        <div id="soup-order">Ничего не выбрано</div>
+                        <input type="hidden" id="hidden-soup" name="soup" value="" required>
+                    </div>
+                    <div class="choose-food">
+                        <label for="main-food">Главное блюдо:</label>
+                        <div id="main-dish-order">Ничего не выбрано</div>
+                        <input type="hidden" id="hidden-main-dish" name="main-food" value="" required>
+                    </div>
+                    <div class="choose-food">
+                        <label for="drink">Напиток:</label>
+                        <div id="drink-order">Ничего не выбрано</div>
+                        <input type="hidden" id="hidden-drink" name="drink" value="" required>
+                    </div>
+                    <div class="choose-food">
+                        <label for="total-order">Стоимость:</label>
+                        <div id="total-order">0</div>
+                        <input type="hidden" id="hidden-total" name="total-order" value="">
+                    </div>
+                    </div>
+
+
+
+                    <div class="message-text">
+                        <label for="feedback">Сообщения</label> <br>
+                        <textarea id="feedback" name="feedback" rows="4" cols="87" placeholder="Введите здесь свои комментарии..."></textarea>
+                    </div>
+                </div>
+    
+                <div class="customer-form">
+                    <p>Ваши данные</p>
+                    <div class="text-form">
+                        <label for="name">Имя:</label><br>
+                        <input type="text" name="name" id="name" class="textform" required placeholder="Введите ваше имя" >
+                    </div>
+                    <div class="text-form">
+                        <label for="email">Email:</label> <br>
+                        <input type="email" name="email" id="email" class="textform" required placeholder="Введите ваша электронная почта">
+                    </div>
+                    <div class="form-checkbox1">
+                        <input type="checkbox" name="checkbox" id="checkbox" class="custom-radio" checked>
+                        <label for="checkbox">Получать информацию о скидках и акциях</label>
+                     </div>
+                     <div class="text-form">
+                        <label for="number-tel">Номер телефона:</label><br>
+                        <input type="tel" name="number-tel" id="number-tel" class="textform" required placeholder="Введите ваш номер телефона">
+                    </div>
+                    <div class="text-form">
+                        <label for="address">Адрес доставки:</label> <br>
+                        <input type="text" name="address" id="address" class="textform" required placeholder="Введите адрес доставки">
+                        <p class="lol"><i>Доставка осуществляется только в Москве</i></p>
+                    </div>
+                    <div class="radio-buttons">
+                        <p class="radio-buttons-text">Времени доставки:</p>
+                        <label>
+                            <input type="radio" name="delivery-time" value="as-soon-as-possible" required> Как можно скорее
+                        </label><br>
+                        <label>
+                            <input type="radio" name="delivery-time" value="at-specified-time"> К указанному времени
+                        </label>
+                    </div>
+                    <div class="text-form">
+                        <label for="time">Укажите время  доставки:</label><br>
+                        <input type="time" name="time" id="time" min="07:00" max="23:00" step="300" class="textform" required >
+                    </div>
+                    <div class="comfirm">
+                        <p class="lol"><i>Доступное время доставкм с 8:00 до 22:00</i></p>
+                        <div class="buttons">
+                            <div class="form-submit">
+                                <input type="reset" value="Сбросить">
+                            </div>
+                            <div class="form-submit">
+                                <input type="submit" value="Отправить">
+                            </div>
+                    </div>
+                    </div>
+    
+                </div>
+            </form>
+            </section>
+
+    </main>
+    <footer id="contacts">
+        <p>
+          Позвонить нам: <a href="tel:+7-000-000-00-00">+7-000-000-00-00</a>
+          &nbsp;
+          <a href="https://www.facebook.com" target="_blank" class="icon"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://web.telegram.org/a/" target="_blank" class="icon"><i class="fa-brands fa-telegram"></i></a>
+        </p>
+    </footer> 
+
+    
+    <script src="lab2.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+*{
+    font-family:'Jost', sans-serif;
+}
+
+body {
+    width:100%;
+    box-sizing: border-box;
+}
+
+header h1{
+    margin: 0px;
+    padding: 100px;
+    text-align: center;
+    font-size: 80px;
+    background-image:url(banner.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:left;
+
+}
+
+.nav1 {
+    padding:20px;
+    padding-right: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30px;                      /* Xóa khoảng cách bên trong container */
+    margin: 0;                       /* Xóa khoảng cách bên ngoài container */ 
+    background-color: rgb(75, 230, 75);
+}
+
+.nav1 a{
+    text-decoration: none;
+    color:black;
+    font-size: 35px;
+    font-weight: 500;
+    margin:10px;
+    padding: 10px; 
+}
+
+.nav1 a:hover{
+    color: red;
+}
+
+#main-page {
+    color: red;
+}
+
+#about {
+    font-size: 40px;
+}
+
+.section_1 p {
+    font-size: 30px;
+}
+
+.main-image {
+    width:100%;
+    height: auto;
+}
+
+.section_2 ul{
+    padding: 0px;
+    margin-left: 100px;
+    font-size: 30px;
+    list-style: none;
+}
+
+.section_2 h2 {
+    font-size: 40px;
+}
+
+.section_3 h2 {
+    font-size: 40px;
+}
+
+.section_3 th, td{
+    border:1px solid black;
+    font-size: 30px;
+}
+
+table{
+    border-collapse:collapse;
+    margin-left:30px;
+    display: flex;
+    justify-content: center;
+}
+
+th, td{
+    text-align: center;
+}
+
+#contacts p,#contacts a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#contacts {
+    background-color: black;
+    padding: 20px;
+    margin-top: 10px;
+    width: auto;
+    box-sizing:border-box;
+}
+
+.table-photo {
+     width: 400px;
+     height:auto;
+     padding:10px;
+    border-radius: 15px;
+}
+
+.abc {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+
+@media (max-width: 1100px) {
+    .main-image {
+        width: 100%;
+        height: auto'
+    }
+
+    .nav1 {
+        display: flex;
+        justify-content: space-between; /* Căn đều các phần tử với khoảng cách bằng nhau */
+        flex-wrap: wrap; /* Cho phép các phần tử xuống dòng nếu cần */
+        padding: 0; /* Xóa khoảng cách giữa container và phần tử đầu/cuối */
+    }
+}
+
+@media (max-width: 800px) {
+    h1 {
+        text-align: center;
+    }
+
+    .main-image {
+        width: 100%;
+        height: auto'
+    }
+
+    .nav1 {
+        display: flex;
+        flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+        align-items: center; /* Căn giữa theo trục ngang (cross axis) */
+        padding: 0; /* Xóa khoảng cách giữa container và phần tử đầu/cuối */
+    }
+
+    .nav1 a {
+        font-size: calc(35px + 4px); /* Tăng kích thước font của liên kết thêm 4px */
+        margin: 5px 0;
+    }
+
+    table, th, td {
+        font-size: calc(100% - 2px); /* Уменьшаем шрифт на 2px */
+    }
+}
+
+@media (max-width: 400px) {
+    table, th, td {
+        font-size: calc(100% - 2px); /* Уменьшаем шрифт на 2px */
+    }
+}

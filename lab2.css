@@ -1,0 +1,306 @@
+*{
+    font-family:'Jost', sans-serif;
+}
+
+body {
+    width:100%;
+    height: auto;
+    /*max-width: 870px;
+    margin: 0 auto;*/
+    box-sizing: border-box;
+}
+
+header h1{
+    margin: 0px;
+    padding: 100px;
+    text-align: center;
+    font-size: 80px;
+    background-image:url(banner.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:left
+
+}
+
+.nav1 {
+    padding:20px;
+    padding-right: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(75, 230, 75);
+}
+
+.nav1 a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    font-size: 35px;
+    margin:10px;
+}
+
+#main-page {
+    color: red;
+}
+
+.nav1 a:hover{
+    color: red;
+}
+
+.block-food {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 5px rgb(170, 170, 170);
+    border-radius: 35px;
+    font-size: 30px;
+    padding: 30px 40px;
+}
+
+.photo-food {
+    height: 500px;
+    width: auto;
+    border-radius: 35px;
+}
+
+.photo {
+    text-align: center;
+}
+
+.food:hover {
+    border: 2px solid red;
+}
+
+.price, .name-food {
+    margin: 10px 0;
+}
+
+.weight-volume {
+    margin-top: auto;
+    color: rgb(177, 177, 177);
+}
+
+.button {
+    display:flex;
+    justify-content: center;
+}
+
+.button input[type="submit"]{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 30px;
+    background-color: #f1eee9;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.button input[type="submit"]:hover {
+    background-color: rgb(96, 205, 124); /* Màu nền khi hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng khi hover */
+}
+
+.button input[type="submit"]:active {
+    background-color: black; /* Màu nền khi nhấn giữ */
+    color: white;
+    transform: scale(0.90); /* Hiệu ứng nhấn nút thu nhỏ */
+}
+
+.kind-food {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#contacts p,#contacts a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#contacts {
+    background-color: black;
+    padding: 40px;
+    margin-top: 10px;
+    width: auto;
+    box-sizing:border-box;
+}
+
+.icon-header {
+    padding-right: 30px;
+}
+
+
+.form-order {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.place-order {
+    font-size: 50px;
+    text-align: center;
+}
+
+.customer-order, .customer-form {
+    font-size: 30px;
+}
+
+#soup, #main-food, #drink {
+    width: 450px;
+    height: 35px;
+    font-size: 25px;
+    color: gray;
+    border-radius: 10px;
+}
+#soup option,#main-food option,#drink option {
+    background-color: #ffffff; /* Màu nền của mỗi tùy chọn */
+    color: #000000; /* Màu chữ */
+    padding: 5px; /* Khoảng cách bên trong mỗi tùy chọn */
+}
+
+#soup:hover,#main-food:hover,#drink:hover {
+    border-color: #ff0000; /* Thay đổi màu viền khi di chuột */
+}
+
+#soup:focus,#main-food:focus,#drink:focus {
+    outline: none; /* Xóa đường viền mặc định khi được chọn */
+    border-color: #007bff; /* Đổi màu viền khi được chọn */
+    box-shadow: 0 0 5px rgba(0,123,255,0.5); /* Hiệu ứng đổ bóng */
+}
+
+#feedback {
+    background-color: #f9f9f9; /* Màu nền */
+    color: #333; /* Màu chữ */
+    border: 1px solid #ccc; /* Viền */
+    padding: 10px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo tròn góc */
+    font-size: 16px; /* Cỡ chữ */
+    width: 90%; /* Chiều rộng 100% */
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến kích thước */
+    resize: none; /* Vô hiệu hóa khả năng thay đổi kích thước */
+}
+
+#feedback::placeholder {
+    color: #999; /* Màu của placeholder */
+    font-size: 30px;
+    font-style: italic; /* Kiểu chữ in nghiêng */
+}
+
+#feedback:hover {
+    border-color: #ff0000; /* Thay đổi màu viền khi di chuột */
+}
+
+#feedback:focus {
+    outline: none; /* Xóa viền mặc định khi được chọn */
+    border-color: #007bff; /* Màu viền khi textarea được chọn */
+    box-shadow: 0 0 5px rgba(0,123,255,0.5); /* Hiệu ứng đổ bóng */
+}
+
+input[type="text"].textform, input[type="email"].textform, input[type="tel"].textform {
+    width: 450px;
+    height: 35px;
+    font-size: 25px;
+    color: gray;
+    border-radius: 10px;
+}
+
+
+input[type="text"].textform:focus, input[type="email"].textform:focus, input[type="tel"].textform:focus,input[type="time"].textform:focus {
+    outline: none; /* Xóa viền mặc định khi được chọn */
+    border-color: #007bff; /* Màu viền khi textarea được chọn */
+    box-shadow: 0 0 5px rgba(0,123,255,0.5); /* Hiệu ứng đổ bóng */
+}
+
+input[type="time"].textform {
+    width: 150px;
+    height: 35px;
+    font-size: 25px;
+    color: gray;
+    border-radius: 10px;
+}
+
+.lol, .radio-buttons-text {
+    margin: 5px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.form-submit input[type="submit"], .form-submit input[type="reset"]{
+    padding: 10px 15px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: white;
+    border: 3px solid black;
+}
+
+.form-submit input[type="submit"]:hover, .form-submit input[type="reset"]:hover {
+    background-color: rgb(255, 0, 0); /* Màu nền khi hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng khi hover */
+}
+
+.form-submit input[type="submit"]:active,.form-submit input[type="reset"]:active {
+    background-color: black; /* Màu nền khi nhấn giữ */
+    color: white;
+    transform: scale(0.8); /* Hiệu ứng nhấn nút thu nhỏ */
+}
+
+
+
+@media (max-width: 1100px) {
+    .block-food {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Tạo 3 cột */
+        gap: 10px; /* Khoảng cách giữa các khối */
+    }
+
+    .nav1 {
+        display: flex;
+        justify-content: space-between; /* Căn đều các phần tử với khoảng cách bằng nhau */
+        flex-wrap: wrap; /* Cho phép các phần tử xuống dòng nếu cần */
+        padding: 0; /* Xóa khoảng cách giữa container và phần tử đầu/cuối */
+    }
+}
+
+@media (max-width: 800px) {
+    h1 {
+        text-align: center; /* Căn giữa văn bản của tiêu đề chính */
+    }
+
+    .nav1 {
+        display: flex;
+        flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+        align-items: center; /* Căn giữa theo trục ngang (cross axis) */
+    }
+
+    .nav1 a {
+        font-size: calc(35px + 4px); /* Tăng kích thước font của liên kết thêm 4px */
+        margin: 5px 0; /* Khoảng cách giữa các liên kết */
+    }
+
+    section h2 {
+        text-align: center; /* Căn giữa văn bản của các tiêu đề phần */
+    }
+
+    .block-food {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Giữ nguyên 3 cột */
+        gap: 10px; /* Khoảng cách giữa các khối món ăn */
+    }
+    .form-order {
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+}
+
+.test {
+    margin: 0px 5px 5px 0px;
+} 
