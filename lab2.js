@@ -28,7 +28,7 @@ function displayDishes(dishes, sectionSelector) {
         foodDiv.setAttribute('data-dish', dish.keyword);
         foodDiv.innerHTML = `
             <div class="photo"><img src="${dish.image}" alt="${dish.name}" class="photo-food"></div>
-            <p class="price">${dish.price}</p>
+            <p class="price">${dish.price}₽</p>
             <p class="name-food">${dish.name}</p>
             <p class="weight-volume">${dish.count}</p>
             <div class="button">
